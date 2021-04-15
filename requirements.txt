@@ -1,0 +1,6 @@
+numpy==1.19.3
+Flask==1.1.2
+Pillow==8.0.1
+Flask-FontAwesome==0.1.5
+Keras==2.4.3
+Keras-Preprocessing==1.1.2
