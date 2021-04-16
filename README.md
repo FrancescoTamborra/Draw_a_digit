@@ -10,7 +10,13 @@ Demo:[site](https://)
 
 
 ## Installation
-Make sure to have Python >= 3.something on your machine or virtual environment and run:
+Make sure to have Python >= 3.something on your machine or virtual environment.
+
+It is recommended to upgrade pip:
+
+    pip install --upgrade pip
+    
+and then just run:
 
     pip install -r requirements.txt
    
