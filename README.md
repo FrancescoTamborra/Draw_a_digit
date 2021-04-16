@@ -10,8 +10,9 @@ Demo:[site](https://)
 
 
 ## Installation
-The app is tested on Python 3.8 but it should work with any Python3.6+ version
-(I couldn't test it because XCode 12.4 conflicts with pyenv. Raise an issue and let me know if you have any problem.)
+The app is tested on Python 3.8 but it should work with any Python3.6+ version.
+
+(I couldn't test it because XCode 12.4 conflicts with pyenv; raise an issue and let me know if you have any problem.)
 
 It is recommended to upgrade pip:
 
