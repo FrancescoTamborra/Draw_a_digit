@@ -73,7 +73,8 @@
               <p> Or, if you prefer, here are the layers as declared in <a href='https://keras.io/' >Keras</a>: </p>
               <div class'card'>
                 <div class='card-body text-left code'>
-                  <p class='mb-0'> model = Sequential() </p>
+                  <p class='mb-0'> def define_model(): </p>
+                  <p class='tab'> model = Sequential() </p>
                   <p class='tab'>  model.add(Conv2D(32, kernel_size=5, padding='same', activation='relu', input_shape=(28, 28, 1))) </p>
                   <p class='tab'>  model.add(MaxPooling2D()) </p>
                   <p class='tab'>  model.add(Dropout(0.4)) </p>
@@ -84,11 +85,15 @@
                   <p class='tab'>  model.add(Dense(128, activation='relu')) </p>
                   <p class='tab'>  model.add(Dropout(0.4)) </p>
                   <p class='tab'>  model.add(Dense(10, activation='softmax')) </p>
+                  <br>
+                  <p class='tab'> model.compile( </p>
+                  <p class='dbtab'>       optimizer='adam', </p>
+                  <p class='dbtab'>       loss='categorical_crossentropy', </p>
+                  <p class='dbtab'>       metrics=['accuracy'], </p>
+                  <p class='tab'>   ) </p>
+                  <p class='tab'> return model </p>
                 </div>
               </div>
-              <br>
-              It uses Adam optimizer and, obviously, categorical cross-entropy as loss function.
-              <br>
               <br>
               In cross-validation, during training, the model reached around 98%
               accuracy and it does not seem to overfit:
@@ -105,7 +110,7 @@
             <div class="card card-body text-justify">
               <p> The app is developped using <a href='https://flask.palletsprojects.com/en/1.1.x/'>Flask</a> and it makes
               extensive use of JavaScript. </p>
-              <p> It is responsive (really good looking !) and it supports touch screens. </p>
+              <p> It is responsive, really good looking (!) and it supports touch screens. </p>
               <p> The histogram is made with <a href='https://www.chartjs.org/'>Chart.js</a>,
                 a very nice tool I discoverd on the occasion.  </p>
               <p> Before calling the classifier, the drawn digit is inverted, recentered and downscaled

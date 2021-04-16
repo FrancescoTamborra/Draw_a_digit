@@ -20,14 +20,14 @@ def model_performance(histories):
         plt.title('Cross Entropy Loss')
         plt.plot(histories[i].history['loss'], color='blue')
         plt.plot(histories[i].history['val_loss'], color='orange')
-        plt.xticks([0, 1, 2, 3, 4])
+        plt.xticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
         plt.legend(['train', 'test'], loc='upper right')
         # plot accuracy
         plt.subplot(1, 2, 2)
         plt.title('Classification Accuracy')
         plt.plot(histories[i].history['accuracy'], color='blue')
         plt.plot(histories[i].history['val_accuracy'], color='orange')
-        plt.xticks([0, 1, 2, 3, 4])
+        plt.xticks([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
         plt.legend(['train', 'test'], loc='upper left')
     # plt.show()
     fig.savefig('model_performance_crossval.png')
@@ -85,7 +85,7 @@ with open('model_summary.txt', 'w') as fh:
 
 
 # evaluate model with k-fold cross-validation
-def evaluate_model(model, dataX, dataY, n_folds=5, epochs=8, verbose=0, batch_size=32):
+def evaluate_model(model, dataX, dataY, n_folds=5, epochs=10, verbose=0, batch_size=32):
     print('evaluating the model...')
     histories = list()
     kfold = KFold(n_folds, shuffle=True, random_state=42)
@@ -105,7 +105,10 @@ def evaluate_model(model, dataX, dataY, n_folds=5, epochs=8, verbose=0, batch_si
         histories.append(history)
     return histories
 
-#histories = evaluate_model(trainX, trainY)
+# Uncomment to perform cross-validation and produce a plot on perf
+
+# histories = evaluate_model(trainX, trainY)
+# model_performance(histories)
 
 
 model = define_model()
