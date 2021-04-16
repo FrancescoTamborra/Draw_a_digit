@@ -15,5 +15,5 @@ From terminal:
 
     python3 app.py
     
-The app is running on: (http://localhost:8080)[http://localhost:8080/]
+The app is running on: [http://localhost:8080](http://localhost:8080/)
     
