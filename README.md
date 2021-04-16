@@ -1,8 +1,8 @@
 # Draw a digit
 
-"Draw a digit" is a simple Flask web app for mouse-or-finger-written digit recognition.
+"Draw a digit" is a simple Flask web app for **mouse-or-finger-written digit recognition**.
 
-**Demo:[site](https://)**
+Demo:[site](https://)
 
 <p align="center">
   <img width="1200" src="/static/images/screenshot_home.png">
