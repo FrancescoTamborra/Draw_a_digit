@@ -15,5 +15,13 @@ From terminal:
 
     python3 app.py
     
-The app is running on: [http://localhost:8080](http://localhost:8080/)
+The app will run on: [http://localhost:8080](http://localhost:8080/)
+
+## Model
+
+The model is a 2xCNN layers with the following architecture:
+
+![CNN architecture](/static/images/nn.png)
+
+See ``model\CNN.py`` for more details.
     
