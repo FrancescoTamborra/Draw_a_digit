@@ -37,5 +37,7 @@ The model is a 2xCNN layers with the following architecture:
 
 ![CNN architecture](/static/images/nn.png)
 
-For more details see ``model\CNN.py``.
+For more details see 'model\CNN.py'.
+
+The test accuracy of the model is **99.3%**.
     
