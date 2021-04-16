@@ -71,7 +71,7 @@
             <div class='card card-body text-justify'>
               The model is a 2xCNN layers with the following architecture:
               <img class='w-100' src="static/images/nn.png">
-              <p> Or, if you prefer, here are the layers as declared in <a href='https://keras.io/' >Keras</a>: </p>
+              <p> Or, if you prefer, here is its definition in <a href='https://keras.io/' >Keras</a>: </p>
               <div class'card'>
                 <div class='card-body text-left code'>
                   <p class='mb-0'> def define_model(): </p>
@@ -96,10 +96,9 @@
                 </div>
               </div>
               <br>
-              In cross-validation, during training, the model reached around 99%
-              accuracy and it does not seem to overfit:
+              <p> In cross-validation the model reached <span class='bold'> 99.5% </span>
+              accuracy and it does not seem to overfit: </p>
               <img class='py-3' src="static/images/perf.png">
-              <p> The test accuracy is <span class='bold'> 99.3% </span> </p>
             </div>
           </div>
         </div>
@@ -119,17 +118,14 @@
                 dataset on which the model is trained: </p>
               <img class='py-1' src="static/images/preprocessing.png">
               <p class='pb-0'> Notice that there is no magnification of the image and therefore,
-                if you write a small digit the model will probabily fail because
+                if you write a small digit the model will probabily misclassify because
                 of the padding.
-                I didn't find interesting to implement magnification because: </p>
-              <p class='tab'>1. It's quite hard to accomplish without using advanced
-                image processing techniques and tools. </p>
-              <p class='tab'>2. In a real scenario the problem should be approached
+              <p>  I didn't find interesting to implement magnification because
+                in a real scenario the problem should be approached
                 the other way around by training the model using images with different
-                sizes and offsets. </p>
-              <br>
+                sizes and offsets, but it is out of scope for this project. </p>
               <p> The app is deployed on <a href='https://cloud.google.com/appengine'>Google App Engine</a>
-                but you can download it from my github and run it on localhost:8080 following
+                but you can download it from my github and run it on localhost following
                 the instructions in the <a href='https://github.com/FrancescoTamborra/Draw_a_digit'>README</a> </p>
             </div>
           </div>

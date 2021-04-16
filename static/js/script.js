@@ -11,6 +11,7 @@ window.onload = ()=>{
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.lineWidth = 8;
   ctx.lineCap = "round";
+  console.log('Hello geek :)')
 };
 
 // Mouse events

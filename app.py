@@ -28,7 +28,7 @@ def center_image(img):
     for y in range(h):
         offset_y = y * w
         for x in range(w):
-            if imgpix[offset_y + x] > 0:  # exclude the singularity
+            if imgpix[offset_y + x] > 0:  # exclude the origin
                 left = min(left, x)
                 top = min(top, y)
                 right = max(right, x)
@@ -73,5 +73,5 @@ def predict_digit():
 
 if __name__ == '__main__':
     print(("* Loading model, please wait..."))
-    model_loader()  # model should always be load here, once
+    model_loader()  # model should always be loaded here, once
     app.run(host='127.0.0.1', port=8080, debug=True)
