@@ -4,7 +4,10 @@
 
 **Demo:[site](https://)**
 
-![screenshot](/static/images/screenshot_home.png)
+<p align="center">
+  <img width="460" src="/static/images/screenshot_home.png">
+</p>
+
 
 ## Installation
 Make sure to have Python >= 3.something on your machine or virtual environment and run:
