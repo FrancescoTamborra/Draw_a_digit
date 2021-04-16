@@ -11,7 +11,7 @@ window.onload = ()=>{
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.lineWidth = 8;
   ctx.lineCap = "round";
-}
+};
 
 // Mouse events
 canvas.addEventListener("mousedown", (e) =>{
@@ -105,14 +105,14 @@ function saveImage() {
   })
 
   console.timeEnd("time");
-}
+};
 
 function showResults(res) {
   pred_digit.textContent = res.pred;
   pred_prob.value = res.probs[res.pred].toFixed(2);
   data = res.probs;
   updateData(predchart, data);
-}
+};
 
 function updateData(predchart, data) {
     predchart.data.datasets[0].data = data;

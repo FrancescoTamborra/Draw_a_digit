@@ -39,7 +39,7 @@ def score(model, testX, testY):
         testX,
         to_categorical(testY)
     )
-    result = "This model achieved {:.3f} test loss and {:.2f} % test accuracy".format(
+    result = 'This model achieved {:.3f} test loss and {:.2f} % test accuracy'.format(
         sco[0], sco[1]*100)
     return result
 

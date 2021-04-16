@@ -58,7 +58,7 @@ def root():
 @app.route('/prediction', methods=['POST'])
 def predict_digit():
     res_json = {}
-    raw_img = Image.open(request.files["img"]).convert("L")
+    raw_img = Image.open(request.files['img']).convert('L')
     img = prepare_image(raw_img)
 
     # model_loader()
@@ -75,7 +75,3 @@ if __name__ == '__main__':
     print(("* Loading model, please wait..."))
     model_loader()  # model should always be load here, once
     app.run(host='127.0.0.1', port=8080, debug=True)
-
-
-# fix favicon: icon on tab
-# https://flask.palletsprojects.com/en/1.1.x/patterns/favicon/
