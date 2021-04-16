@@ -24,15 +24,15 @@ and then just run:
    
 ## Usage
 
-- Run the app:
+Run the app:
 
-      python3 app.py
+    python3 app.py
     
 The app will run on: [http://localhost:8080](http://localhost:8080/)
 
-- Train the model:
+The model is already trained but if you want to modify something and retrain it, you just have to launch:
 
-      python3 model/CNN.py
+    python3 model/CNN.py
     
 If you want to run cross-validation and plot it you have to uncomment the lines:
 
