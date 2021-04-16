@@ -1,6 +1,11 @@
 runtime: python37
 
 handlers:
+  # Damned favicon
+- url: /favicon.ico
+  static_files: static/images/favicon.ico
+  upload: static/images/favicon.ico
+
   # This configures Google App Engine to serve the files in the app's static
   # directory.
 - url: /static
