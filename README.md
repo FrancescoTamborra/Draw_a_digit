@@ -4,11 +4,13 @@
 
 **Demo:[site](https://)**
 
+![screenshot](/static/images/screenshot_home.png)
+
 ## Installation
 Make sure to have Python >= 3.something on your machine or virtual environment and run:
 
     pip install -r requirements.txt
-    
+   
 ## Usage
 
 - Run the app:
