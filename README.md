@@ -18,7 +18,7 @@ It is recommended to upgrade pip:
 
     pip install --upgrade pip
     
-and then just run:
+then just run:
 
     pip install -r requirements.txt
    
