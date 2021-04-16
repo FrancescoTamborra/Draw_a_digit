@@ -50,6 +50,4 @@ The model is a 2xCNN layers with the following architecture:
 For more details see ``model\CNN.py``.
 
 The cross-validation accuracy of the model is **99.5%**.
-
-![perf](/static/images/perf.png)
     
