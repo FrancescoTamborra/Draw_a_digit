@@ -4,8 +4,16 @@
 
 **Demo:[site](https://)**
 
-## Install and run
-Make sure to have Python >= 3.something on your machine or virtual environment and run from terminal:
+## Installation
+Make sure to have Python >= 3.something on your machine or virtual environment and run:
 
     pip install -r requirements.txt
+    
+## Usage
+
+From terminal:
+
+    python3 app.py
+    
+The app is running on: (http://localhost:8080)[http://localhost:8080/]
     
