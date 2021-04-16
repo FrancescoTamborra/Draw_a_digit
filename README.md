@@ -5,7 +5,7 @@
 **Demo:[site](https://)**
 
 <p align="center">
-  <img width="460" src="/static/images/screenshot_home.png">
+  <img width="800" src="/static/images/screenshot_home.png">
 </p>
 
 
