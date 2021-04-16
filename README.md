@@ -18,13 +18,13 @@ Make sure to have Python >= 3.something on your machine or virtual environment a
 
 - Run the app:
 
-    python3 app.py
+      python3 app.py
     
 The app will run on: [http://localhost:8080](http://localhost:8080/)
 
 - Train the model:
 
-    python3 model/CNN.py
+      python3 model/CNN.py
     
 If you want to run cross-validation and plot it you have to uncomment the lines:
 
