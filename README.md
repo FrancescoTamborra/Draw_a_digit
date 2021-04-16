@@ -30,7 +30,7 @@ Run the app:
     
 The app will run on: [http://localhost:8080](http://localhost:8080/)
 
-***
+---
 
 The model is already trained but if you want to modify something and retrain it, you just have to launch:
 
