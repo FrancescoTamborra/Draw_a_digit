@@ -36,7 +36,7 @@ The model is already trained but if you want to modify something and retrain it,
 
     python3 model/CNN.py
     
-If you want to run cross-validation and make a plot of the average performance, you have to uncomment these lines:
+If you want to run cross-validation, save it and make a plot of the average performance, you have to uncomment these lines:
 
     # histories = evaluate_model(model, trainX, trainY)
     # save_histories(histories)
