@@ -36,10 +36,14 @@ The model is already trained but if you want to modify something and retrain it,
 
     python3 model/CNN.py
     
-If you want to run cross-validation and make a plot of the performance, you have to uncomment the lines:
+If you want to run cross-validation and make a plot of the average performance, you have to uncomment the lines:
 
-    # histories = evaluate_model(trainX, trainY)
-    # model_performance(histories)
+    # histories = evaluate_model(model, trainX, trainY)
+    # save_histories(histories)
+    # histories_mean = mean_folds_history()
+    # model_performance(histories_mean)
+
+take care of updating and pass to the functions the new default parameters if you changed them (e.g. n_folds, epochs)
 
 ## Model
 
