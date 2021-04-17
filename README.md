@@ -54,4 +54,3 @@ The model is a 2xCNN layers with the following architecture:
 For more details see ``model\CNN.py``.
 
 The 5-folds cross-validation accuracy of the model reached **99.5%** after 10 epochs.
-    
