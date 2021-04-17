@@ -10,24 +10,24 @@ Demo:[site](https://)
 
 
 ## Installation
-Make sure you have Python3.7+ on your machine or virtual environment. 
+Make sure you have Python3.7+ on your machine or virtual environment.
 
 The app should work with Python3.6 as well but I couldn't test it because XCode 12.4 conflicts with pyenv; raise an issue if you encounter any problem.
 
 It is recommended to upgrade pip:
 
     pip install --upgrade pip
-    
+
 then just run:
 
     pip install -r requirements.txt
-   
+
 ## Usage
 
 Run the app:
 
     python3 app.py
-    
+
 The app will run on: [http://localhost:8080](http://localhost:8080/)
 
 ---
@@ -35,7 +35,7 @@ The app will run on: [http://localhost:8080](http://localhost:8080/)
 The model is already trained but if you want to modify something and retrain it, you just have to launch:
 
     python3 model/CNN.py
-    
+
 If you want to run cross-validation, save it and make a plot of the average performance, you have to uncomment these lines:
 
     # histories = evaluate_model(model, trainX, trainY)

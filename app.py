@@ -2,16 +2,12 @@ import json
 import numpy as np
 
 from flask import Flask, render_template, request, redirect
-from flask_fontawesome import FontAwesome
-
 from PIL import Image, ImageOps, ImageChops
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
 
 app = Flask(__name__)
-app.config['FONTAWESOME_STYLES'] = ['brands', 'solid']
-fa = FontAwesome(app)
 model = None
 
 
@@ -61,7 +57,6 @@ def predict_digit():
     raw_img = Image.open(request.files['img']).convert('L')
     img = prepare_image(raw_img)
 
-    # model_loader()
     predictions = model.predict(img)
     probs = predictions[0]*100
     pred = str(np.argmax(predictions))

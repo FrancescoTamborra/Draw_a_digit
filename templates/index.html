@@ -4,10 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ fontawesome_html() }}
     <title>Draw a digit</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;600&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
@@ -96,8 +96,8 @@
                 </div>
               </div>
               <br>
-              <p> In cross-validation, over 10 epochs, the model reached <span class='bold'> 99.5% </span>
-              accuracy and it does not seem to overfit: </p>
+              <p> The 5-folds cross-validation accuracy of the model reached <span class='bold'> 99.5% </span>
+              after 10 epochs and it does not seem to overfit: </p>
               <img class='py-3' src="static/images/perf.png">
             </div>
           </div>
@@ -118,15 +118,15 @@
                 dataset on which the model is trained: </p>
               <img class='py-1' src="static/images/preprocessing.png">
               <p class='pb-0'> Notice that there is no magnification of the image and therefore,
-                if you write a small digit the model will probabily misclassify because
+                if you write a small digit the model will probabily misclassify it because
                 of the padding.
               <p>  I didn't find interesting to implement magnification because
-                in a real scenario the problem should be approached
-                the other way around by training the model using images with different
+                in a real case scenario the problem should be approached
+                the other way around by training the model on images with different
                 sizes and offsets, but it is out of scope for this project. </p>
-              <p> The app is deployed on <a href='https://cloud.google.com/appengine'>Google App Engine</a>
-                but you can download it from my github and run it on localhost following
+              <p> You can git clone or download the app from my github and run it on localhost following
                 the instructions in the <a href='https://github.com/FrancescoTamborra/Draw_a_digit'>README</a> </p>
+              <p> Enjoy ! :) </p>
             </div>
           </div>
         </div>
@@ -135,6 +135,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.0/chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/ad2e1a3d45.js" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
