@@ -31,9 +31,9 @@ Run the app:
 
 The app will run on: [http://localhost:8080](http://localhost:8080/)
 
----
+## Retrain the model
 
-The model is already trained but if you want to modify something and retrain it you first need to: 
+The model is already trained but if you want to modify something and retrain the network you first need to: 
 
 - add these two lines to ``requirements.txt`` :
 
