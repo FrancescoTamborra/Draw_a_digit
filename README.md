@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <img width="1200" src="/static/images/screenshot_home.png">
+  <img width="1200" src="/static/images/demo_gif.gif">
 </p>
 
 

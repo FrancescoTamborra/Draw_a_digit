@@ -1,19 +1,15 @@
 import json
 import numpy as np
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 from PIL import Image, ImageOps, ImageChops
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array
+from keras.preprocessing.image import load_img, img_to_array
 from keras.models import load_model
 
 app = Flask(__name__)
-model = None
 
 
-def model_loader():
-    global model
-    model = load_model('model/32C5-P2_64C5-P2-128.h5')
+MODEL = load_model("model/32C5-P2_64C5-P2-128.h5")
 
 
 def center_image(img):
@@ -51,22 +47,25 @@ def root():
     return render_template('index.html')
 
 
+@app.route("/favicon.ico")
+def favicon():
+    return app.send_static_file("images/favicon.ico")
+
+
 @app.route('/prediction', methods=['POST'])
 def predict_digit():
     res_json = {}
     raw_img = Image.open(request.files['img']).convert('L')
     img = prepare_image(raw_img)
-
-    predictions = model.predict(img)
-    probs = predictions[0]*100
-    pred = str(np.argmax(predictions))
-    res_json['probs'] = probs.tolist()
-    res_json['pred'] = pred
+    if MODEL is not None:
+        predictions = MODEL.predict(img)
+        probs = predictions[0]*100
+        pred = str(np.argmax(predictions))
+        res_json['probs'] = probs.tolist()
+        res_json['pred'] = pred
 
     return json.dumps(res_json)
 
 
 if __name__ == '__main__':
-    print(("* Loading model, please wait..."))
-    model_loader()  # model should always be loaded here, once
     app.run(host='127.0.0.1', port=8080, debug=True)

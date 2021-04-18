@@ -1,8 +1,6 @@
 import json
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import KFold
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import Sequential
