@@ -15,8 +15,6 @@
 ## Installation
 Make sure you have Python3.7+ on your machine or virtual environment.
 
-The app should work with Python3.6 as well but I couldn't test it because XCode 12.4 conflicts with pyenv; raise an issue if you encounter any problem.
-
 It is recommended to upgrade pip:
 
     pip install --upgrade pip
