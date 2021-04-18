@@ -35,9 +35,21 @@ The app will run on: [http://localhost:8080](http://localhost:8080/)
 
 ---
 
-The model is already trained but if you want to modify something and retrain it, you just have to launch:
+The model is already trained but if you want to modify something and retrain it you first need to: 
 
-    python3 model/CNN.py
+- add these two lines to ``requirements.txt`` :
+
+      matplotlib
+      scikit-learn
+
+- execute again:
+
+      pip install -r requirements.txt
+
+
+- launch the training with:
+
+      python3 model/CNN.py
 
 If you want to run cross-validation, save it and make a plot of the average performance, you have to uncomment these lines:
 
