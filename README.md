@@ -56,7 +56,7 @@ If you want to run cross-validation, save it and make a plot of the average perf
     # histories_mean = mean_folds_history()
     # model_performance(histories_mean)
 
-take care of updating and pass to the functions the new default parameters if you changed them (e.g. n_folds, epochs)
+take care of updating and pass to the functions the new default parameters if you changed them (e.g. ``n_folds``, ``epochs``)
 
 ## Model
 
