@@ -4,7 +4,7 @@
 
 <br>
 
-**Demo:[https://draw-a-digit.nw.r.appspot.com/](https://draw-a-digit.nw.r.appspot.com/)**
+**~~Demo:[https://draw-a-digit.nw.r.appspot.com/](https://draw-a-digit.nw.r.appspot.com/)~~ (shutdown)**
 
 
 <p align="center">
